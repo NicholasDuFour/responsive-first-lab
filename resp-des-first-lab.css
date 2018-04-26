@@ -1,0 +1,213 @@
+/*Mobile design*/
+body {
+  background-color: #f9fafc; /*light blue*/
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  list-style-type: none;
+  color: #69696a;/*light grey*/
+  /*margin-top: 3px;*/
+  flex-direction: column;
+}
+
+li {
+  /*display: inline;*/
+  margin: 0px;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: #000; /*black*/
+  color: white;
+  border-radius: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hireus {
+  color: white;
+  background-color: #000; /*black*/
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin-top: 1px;
+  text-align: center;
+}
+
+.chirpus {
+  color: #000; /*black*/
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+
+.filler {
+  border-left: 2px solid #69696a;/*light grey*/
+  /*width: 525px;*/
+  color: #69696a;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  /*float: left;*/
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.middle {
+  display: flex;
+  flex-flow: row-wrap;
+}
+
+h2 {
+  color: #000; /*black*/
+  margin-left: 10px;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.circleparty {
+  /*float: right;*/
+  display: none;
+  position: relative;
+  height: 700px;
+  width: 415px;
+}
+
+#circle1 /*purple*/ {
+  height: 110px;
+  width: 110px;
+  border-radius: 250px;
+  background-color: rgba(207, 130, 213, 0.6);/*purple*/
+  position: absolute;
+  left: 192px;
+  top: 31px;
+
+}
+
+#circle2 /*peach*/ {
+  height: 135px;
+  width: 135px;
+  border-radius: 250px;
+  background-color: rgba(247, 193, 162, 0.7);/*peach*/
+  position: absolute;
+  top: 119px;
+  left: 168px;
+}
+
+#circle3 /*pink*/ {
+  height: 230px;
+  width: 230px;
+  border-radius: 250px;
+  background-color: rgba(247, 136, 167, 0.6); /*pink*/
+  position: absolute;
+}
+
+/*footer {
+
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
+
+input[type="button"]{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #000; /*black*/
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  width: 100%;
+
+  /*No flex way
+
+  margin-left: -185px;*/
+}
+
+
+/*Tablet design*/
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #e3e3e5;/*different bg color*/
+  }
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .middle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .circleparty {
+    display: flex;
+    height: 400px;
+  }
+
+  .filler {
+    width: 40%;
+    height: 20%;
+  }
+
+  input[type="button"] {
+    /*margin: 10px 260px;*/
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .hireus {
+    padding: 5px 20px;
+    color: rgba(247, 136, 167, 0.9); /*pink*/
+  }
+
+  li:hover {
+    padding: 5px 20px;
+    color: rgba(247, 193, 162, 0.7);/*peach*/
+  }
+
+}
+
+
+/*Large tablet/small laptop*/
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #f9fafc; /*light blue*/
+  }
+
+  input[type="button"] {
+    width: 122px;
+    margin: 0 auto;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  .hireus {
+    color: white;
+  }
+
+  li:hover {
+    color: white;
+  }
+}
